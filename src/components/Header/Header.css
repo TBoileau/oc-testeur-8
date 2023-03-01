@@ -1,0 +1,42 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1rem 0;
+  height: 3rem;
+}
+
+.header__logo {
+  height: 100%;
+}
+
+.header__nav {
+  display: flex;
+  align-items: center;
+  gap: .625rem;
+  font-size: .75rem;
+  text-transform: uppercase;
+}
+
+.header__nav a {
+  text-decoration: none;
+  color: var(--primary-color);
+}
+
+.header__nav a:hover, .header__nav a.active {
+  text-decoration: underline;
+}
+
+@media (min-width: 768px) {
+  .header__nav {
+    gap: 2rem;
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 1440px) {
+  .header {
+    margin: 2rem 0;
+    height: 4rem;
+  }
+}
