@@ -1,8 +1,8 @@
 import './Banner.css'
 
 type BannerProps = {
-  title?: string,
-  background: string,
+  title?: string
+  background: string
 }
 
 export function Banner({background, title}: BannerProps): JSX.Element {

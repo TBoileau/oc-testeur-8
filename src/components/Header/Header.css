@@ -23,7 +23,7 @@
 
 .header__nav a {
   text-decoration: none;
-  color: var(--primary-color);
+  color: var(--color-primary);
 }
 
 .header__nav a:hover, .header__nav a.active {
