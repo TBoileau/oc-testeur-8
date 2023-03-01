@@ -1,22 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
-
-:root {
-  --primary-color: #FF6060;
-}
-
 #root {
   height: 100vh;
-  width: 100%;
-  padding: 1rem;
-  box-sizing: border-box;
-  font-family: 'Montserrat', sans-serif;
-}
-
-@media (min-width: 1440px) {
-  #root {
-    max-width: 1240px;
-    margin: 0 auto;
-    padding: 0;
-  }
 }
 

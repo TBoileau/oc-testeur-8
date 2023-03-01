@@ -1,4 +1,36 @@
 .layout {
   display: flex;
   flex-direction: column;
+  height: 100%;
+}
+
+header, main {
+  padding: 0 1rem;
+  width: 100%;
+}
+
+main {
+  flex-grow: 1;
+}
+
+@media (min-width: 768px) {
+  header, main {
+    padding: 0 2rem;
+  }
+}
+
+@media (min-width: 992px) {
+  header, main {
+    max-width: 940px;
+    margin: 0 auto;
+    padding: 0;
+  }
+}
+
+@media (min-width: 1440px) {
+  header, main {
+    max-width: 1240px;
+    margin: 0 auto;
+    padding: 0;
+  }
 }
