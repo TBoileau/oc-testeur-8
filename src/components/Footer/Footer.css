@@ -14,7 +14,7 @@
 }
 
 .footer__copyright {
-  font-size: .75rem;
+  font-size: var(--text-xxs);
 }
 
 @media (min-width: 768px) {
@@ -24,7 +24,7 @@
   }
 
   .footer__copyright {
-    font-size: 1rem;
+    font-size: var(--text-md);
   }
 }
 
@@ -35,6 +35,6 @@
   }
 
   .footer__copyright {
-    font-size: 1.5rem;
+    font-size: var(--text-xl);
   }
 }

@@ -5,6 +5,13 @@
   --color-dark: #000000;
   --color-white: #FFFFFF;
   --color-light: #F6F6F6;
+
+  --text-xxs: .625rem;
+  --text-xs: .75rem;
+  --text-sm: .875rem;
+  --text-md: 1rem;
+  --text-lg: 1.125rem;
+  --text-xl: 1.5rem;
 }
 
 * {

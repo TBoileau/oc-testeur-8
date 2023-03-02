@@ -16,7 +16,7 @@
 
 .error p {
   text-align: center;
-  font-size: 1.125rem;
+  font-size: var(--text-lg);
   font-weight: 500;
   margin: 0 0 4rem;
   padding: 0;

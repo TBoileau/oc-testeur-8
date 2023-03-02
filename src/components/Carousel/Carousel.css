@@ -74,7 +74,7 @@
   }
 
   .carousel__indicator {
-    font-size: 1.125rem;
+    font-size: var(--text-lg);
   }
 
   .carousel__left, .carousel__right {
