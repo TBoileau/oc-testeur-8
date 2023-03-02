@@ -1,7 +1,7 @@
 import './Star.css'
 
 type StarProps = {
-  active: bool
+  active: boolean
 }
 
 export function Star({active}: StarProps): JSX.Element {

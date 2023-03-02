@@ -39,7 +39,7 @@
   padding: 0 1rem;
 }
 
-@media (768px <= width <  1440px) {
+@media (min-width: 768px) {
   .banner {
     height: 160px;
   }
