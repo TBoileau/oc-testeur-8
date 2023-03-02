@@ -1,0 +1,30 @@
+.badge {
+  font-size: .625rem;
+  color: var(--color-white);
+  padding: .25rem 1rem;
+  border-radius: 5px;
+  background: var(--color-primary);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (min-width: 768px) {
+  .badge {
+    font-size: .875rem;
+    padding: .5rem 2rem;
+    border-radius: 10px;
+  }
+}
+
+@media (min-width: 768px) {
+  .housing-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1440px) {
+  .housing-list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
