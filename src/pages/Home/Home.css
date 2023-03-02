@@ -1,0 +1,22 @@
+.housing-list {
+  background-color: var(--color-light);
+  padding: 2rem;
+  border-radius: 25px;
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-column-gap: 2rem;
+  grid-row-gap: 2rem;
+}
+
+@media (min-width: 768px) {
+  .housing-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1440px) {
+  .housing-list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

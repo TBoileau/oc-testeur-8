@@ -1,0 +1,14 @@
+.star {
+  fill: var(--color-light);
+  height: 15px;
+}
+
+.star.active {
+  fill: var(--color-primary);
+}
+
+@media (min-width: 768px) {
+  .star {
+    height: 24px;
+  }
+}
