@@ -21,7 +21,11 @@ export function Home(): JSX.Element {
 
   return (
     <>
-      <Banner background={Background} title="Chez vous, partout et ailleurs" alt="Prise de vue sur une falaise, photo prise par Eric Muhr"/>
+      <Banner
+        background={Background}
+        title="Chez vous, partout et ailleurs"
+        alt="Prise de vue sur une falaise, photo prise par Eric Muhr"
+      />
       <div className="housing-list">
         {housingList.map((housing) => (
           <HousingCard key={housing.id} housing={housing} />

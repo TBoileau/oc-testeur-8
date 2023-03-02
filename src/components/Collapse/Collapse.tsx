@@ -12,9 +12,9 @@ export function Collapse({ title, body }: CollapseProps): JSX.Element {
 
   return (
     <div className={'collapse ' + (open ? 'collapse--open' : '')}>
-      <h2 className="collapse__title" onClick={() => setOpen(!open)}>
+      <button className="collapse__title" onClick={() => setOpen(!open)}>
         {title}
-      </h2>
+      </button>
       <div className="collapse__body">{body}</div>
     </div>
   );
