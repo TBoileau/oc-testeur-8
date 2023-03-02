@@ -32,9 +32,10 @@ jobs:
         uses: actions-js/push@master
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          directory: ${{ github.workspace }}/dist
+          directory: ./dist
           branch: gh-pages
-          message: Deploying to gh-pages
+          message: Déploiement
           author_name: TBoileau[bot]
           author_email: t-boileau@email.com
           force: true
+          empty: true
