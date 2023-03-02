@@ -28,14 +28,9 @@ jobs:
         uses: borales/actions-yarn@v4
         with:
           cmd: build
-      - name: Commiting changes
-        uses: actions-js/push@master
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          directory: ${{ github.workspace }}/dist
-          branch: gh-pages
-          message: Déploiement
-          author_name: TBoileau[bot]
-          author_email: t-boileau@email.com
-          force: true
-          empty: true
+      - name: Deploy
+          uses: peaceiris/actions-gh-pages@v3
+          with:
+            github_token: ${{ secrets.GITHUB_TOKEN }}
+            publish_dir: ./dist
+            publish_branch: gh-pages
