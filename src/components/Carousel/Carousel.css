@@ -32,13 +32,15 @@
   margin-bottom: 1rem;
 }
 
-.carousel__left, .carousel__right {
+.carousel__left,
+.carousel__right {
   position: absolute;
   z-index: 2;
   top: calc(50% - (20px / 2));
 }
 
-.carousel__left > svg, .carousel__right > svg {
+.carousel__left > svg,
+.carousel__right > svg {
   height: 20px;
 }
 
@@ -59,11 +61,13 @@
     display: inline;
   }
 
-  .carousel__left, .carousel__right {
+  .carousel__left,
+  .carousel__right {
     top: calc(50% - (50px / 2));
   }
 
-  .carousel__left > svg, .carousel__right > svg {
+  .carousel__left > svg,
+  .carousel__right > svg {
     height: 50px;
   }
 }
@@ -74,14 +78,16 @@
   }
 
   .carousel__indicator {
-    font-size: 1.125rem;
+    font-size: var(--text-lg);
   }
 
-  .carousel__left, .carousel__right {
+  .carousel__left,
+  .carousel__right {
     top: calc(50% - (75px / 2));
   }
 
-  .carousel__left > svg, .carousel__right > svg {
+  .carousel__left > svg,
+  .carousel__right > svg {
     height: 75px;
   }
 }

@@ -1,7 +1,7 @@
 .badge {
-  font-size: .625rem;
+  font-size: var(--text-xxs);
   color: var(--color-white);
-  padding: .25rem 1rem;
+  padding: 0.25rem 1rem;
   border-radius: 5px;
   background: var(--color-primary);
   display: inline-flex;
@@ -11,8 +11,8 @@
 
 @media (min-width: 768px) {
   .badge {
-    font-size: .875rem;
-    padding: .5rem 2rem;
+    font-size: var(--text-xxs);
+    padding: 0.5rem 2rem;
     border-radius: 10px;
   }
 }

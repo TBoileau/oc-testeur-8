@@ -1,0 +1,40 @@
+---
+name: Continuous deployment
+on:
+  push:
+    branches:
+      - main
+jobs:
+  cd:
+    name: Deploy
+    runs-on: ${{ matrix.operating-system }}
+    strategy:
+      fail-fast: false
+      matrix:
+        operating-system:
+          - ubuntu-latest
+        node-version:
+          - "18.14"
+    env:
+      prepo: ${{github.repository}}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Install
+        uses: borales/actions-yarn@v4
+        with:
+          cmd: install
+      - name: Build
+        uses: borales/actions-yarn@v4
+        with:
+          cmd: build
+      - name: Commiting changes
+        uses: actions-js/push@master
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          directory: github/workspace/dist
+          branch: gh-pages
+          message: Deploying to gh-pages
+          author_name: TBoileau[bot]
+          author_email: t-boileau@email.com
+          force: true
