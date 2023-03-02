@@ -1,5 +1,7 @@
+---
 name: Continuous integration
-on: [push]
+on:
+  - push
 jobs:
   ci:
     name: Continuous Integration
@@ -7,24 +9,26 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        operating-system: [ubuntu-latest]
-        node-version: ['18.14']
+        operating-system:
+          - ubuntu-latest
+        node-version:
+          - "18.14"
     steps:
       - name: Checkout
         uses: actions/checkout@v2
       - name: Install
-          uses: borales/actions-yarn@v4
-          with:
-            cmd: install
+        uses: borales/actions-yarn@v4
+        with:
+          cmd: install
       - name: Build
-          uses: borales/actions-yarn@v4
-          with:
-            cmd: build
+        uses: borales/actions-yarn@v4
+        with:
+          cmd: build
       - name: Linter
-          uses: borales/actions-yarn@v4
-          with:
-            cmd: lint:qa
+        uses: borales/actions-yarn@v4
+        with:
+          cmd: lint:qa
       - name: Type check
-          uses: borales/actions-yarn@v4
-          with:
-            cmd: tsc
+        uses: borales/actions-yarn@v4
+        with:
+          cmd: tsc
