@@ -7,7 +7,7 @@ import './HousingPage.css'
 import {Collapse} from "../../components/Collapse/Collapse";
 
 export function HousingPage(): JSX.Element {
-  const housing: Housing = useLoaderData()
+  const housing = useLoaderData() as Housing
 
   return (
     <div className="housing">
