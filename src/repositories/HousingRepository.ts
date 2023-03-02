@@ -5,7 +5,7 @@ let housings: Housing[] = [];
 
 export async function findAll(): Promise<Housing[]> {
   if (!fetched) {
-    const data = await (await fetch('/data.json')).json();
+    const data = await (await fetch('data.json')).json();
     housings = data.map((housing: HousingRaw) => new Housing(housing));
     fetched = true;
   }
