@@ -43,4 +43,8 @@ export class Housing {
     this.equipments = housingRaw.equipments.map(equipment => new Equipment(equipment))
     this.tags = housingRaw.tags.map(tag => new Tag(tag))
   }
+
+  get ratingToArray(): boolean[] {
+    return [1, 2, 3, 4, 5].map(i => i <= this.rating)
+  }
 }
