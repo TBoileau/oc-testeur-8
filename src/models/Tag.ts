@@ -1,7 +1,7 @@
 export class Tag {
-  public label: string
+  public label: string;
 
   constructor(label: string) {
-    this.label = label
+    this.label = label;
   }
 }

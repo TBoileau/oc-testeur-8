@@ -1,7 +1,7 @@
 export class Picture {
-  public url: string
+  public url: string;
 
   constructor(url: string) {
-    this.url = url
+    this.url = url;
   }
 }
