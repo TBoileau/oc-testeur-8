@@ -5,7 +5,7 @@ on:
 jobs:
   cd:
     name: Deploy
-    runs-on: ${{ matrix.os }}
+    runs-on: ${{ matrix.operating-system }}
     strategy:
       fail-fast: false
       matrix:
